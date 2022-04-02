@@ -1,0 +1,97 @@
+<head>
+    <meta charset="UTF-8">
+    <title>これからしていくこと！</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/sugoruru/site-material/main/favicon/Pg-v.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D85QF4E4K3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-D85QF4E4K3');
+    </script>
+</head>
+
+<body>
+    <p id="title">これからしていくこと！</p>
+    <p id="time">2022/4/3</p>
+    <div id="sub">
+        <div id="profile">
+            <img id="icon" src="https://raw.githubusercontent.com/sugoruru/site-material/main/blog/rurukunIcon.png">
+            <p class="profileFont" style="text-align: center;">ruku</p>
+            <p class="profileFont">「ルク」といいます！プログラミングができる男の子です！面白いサイトやゲームをつくるのでよろしくお願いします！</p>
+        </div>
+    </div>
+    <div id="body">
+        <div id="tableOfContent">
+            <p style="display: inline-block;font-size:25px;">目次</p>
+            <div id="tableOfContentButton">閉じる</div><br>
+            <div id="tableOfContentLetter">
+                <a href="#start">
+                    <div class="tableOfContentNumber ">1.</div>
+                    <div style="display:inline-block;">初めに...</div>
+                </a><br>
+                <a href="#gameIntroduction">
+                    <div class="tableOfContentNumber ">2.</div>
+                    <div style="display:inline-block; ">ゲーム紹介!</div>
+                </a><br>
+                <a href="#game">
+                    <div class="tableOfContentNumber ">3.</div>
+                    <div style="display:inline-block; ">ゲーム実況!</div>
+                </a><br>
+                <a href="#lastly">
+                    <div class="tableOfContentNumber ">4.</div>
+                    <div style="display:inline-block; ">最後に...</div>
+                </a>
+            </div>
+        </div>
+        <div class="box" id="start">初めに...</div>
+        <p class="bodyFont">
+            こんにちは！
+            <br>今回は、サイトタグのついたサイトにしていくことを紹介していきます。
+            <br>どんなことをするのか楽しみにしてください！
+            <br>
+        </p>
+        <div class="box" id="gameIntroduction">ゲーム紹介!</div>
+        <p class="bodyFont">ゲーム紹介をしようかなと思います！
+            <br>面白いゲームや自作ゲームなどを
+            <br>たくさん紹介できたらいいなと思います！
+        </p>
+        <div class="box" id="game">ゲーム実況!</div>
+        <p class="bodyFont">本当にたまにですが、ゲーム実況をしようかなと思います！
+            <br>面白いゲームをスクショなどでやっていきたいと思います！
+            <br>本当にたまになので期待はしないでください（笑）
+        </p>
+        <div class="box" id="lastly">最後に...</div>
+        <p class="bodyFont">
+            このサイトでどんなことをするのか分かったと思います！
+            <br>たくさん楽しいことをしようと思います！
+            <br>ほかにもしてほしいことをお問い合わせ欄にでも書いてください！
+            <br>ではまた今度！
+            <br>さよならー！
+        </p>
+    </div>
+    <div id="form">
+        <h2 style="text-align: center;">お問い合わせ(すべて必須)</h2>
+        <form style="margin-left:2%;" method="post" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeedfwOocHrz7wfBvcGYnboKWM6o15zR_KxxDGecvjCn4YsSQ/formResponse">
+            <label for="form-name" style="font-size:20px;">お名前（匿名可）</label>
+            <p><input id="form-name" type="text" name="entry.1323632420" placeholder="ルク" required=""></p>
+
+            <label for="form-mail" style="font-size:20px;">メールアドレス</label>
+            <p><input id="form-mail" type="email" name="entry.1367445485" placeholder="test@domain.com" required=""></p>
+
+            <label for="form-detail" style="font-size:20px;">質問・意見等がありましたらこちらへどうぞ！</label>
+            <p><textarea id="form-detail" name="entry.1460364535" placeholder="ご自由にご記載下さい。" required=""></textarea></p>
+
+            <p><button id="send_button" type="submit" name="button" value="送信する">送信する</button></p>
+        </form>
+    </div>
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='';alert('回答ありがとうございます！')}"></iframe>
+    <script src="index.js"></script>
+</body>
